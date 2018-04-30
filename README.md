@@ -66,7 +66,7 @@ as well as create and read from SQS queues under the prefix configured.
         "autoscaling:RecordLifecycleActionHeartbeat",
         "autoscaling:CompleteLifecycleAction"
       ],
-      "Resource": "arn:aws:autoscaling:*:*:*",
+      "Resource": "arn:aws:autoscaling:*",
       "Effect": "Allow"
     },
     {
@@ -74,7 +74,7 @@ as well as create and read from SQS queues under the prefix configured.
         "sqs:*"
       ],
       "Resource": [
-        "arn:aws:sqs:*:0123456789:*:*"
+        "arn:aws:sqs:*"
       ],
       "Effect": "Allow"
     },
@@ -92,7 +92,7 @@ as well as create and read from SQS queues under the prefix configured.
         "sns:Subscribe"
       ],
       "Resource": [
-        "arn:aws:sns:us-east-1:0123456789:*"
+        "arn:aws:sns:*"
       ],
       "Effect": "Allow"
     }
